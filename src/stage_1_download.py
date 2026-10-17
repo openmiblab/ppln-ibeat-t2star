@@ -348,15 +348,16 @@ def run(build):
     exeter_patients_followup(path, n_max)
 
     bari_volunteers(path, n_max)
-    leeds_setup(path, n_max)
     leeds_volunteers(path, n_max)
     bordeaux_volunteers(path, n_max)
     exeter_volunteers(path, n_max)
-    exeter_setup(path, n_max)
     turku_philips_repeatability(path, n_max)
     turku_ge_repeatability(path, n_max)
+    
+    leeds_setup(path, n_max)
+    exeter_setup(path, n_max)
     turku_ge_setup(path, n_max)
-    sheffield_setup(path, None)
+    sheffield_setup(path, n_max)
 
 
 if __name__=='__main__':
